@@ -83,6 +83,11 @@ function getMonthWord(getMonth) {
     }
 }
 
+
+function zeroLeft(num) {
+    return num >= 10 ? num : `0${num}`;
+}
+
 function createParagraph() {
     const p = document.createElement('p')
     return p;
@@ -93,7 +98,7 @@ const monthWord = getMonthWord(getMonth);
 
 function dateMessage() {
     const date = document.querySelector('#date');
-    date.innerHTML += `${dayWord}, ${monthWord} ${dayMonth}, ${year} --- ${hours}:${minutes}`;
+    date.innerHTML += `${dayWord}, ${monthWord} ${dayMonth}, ${year} --- ${zeroLeft(hours)}:${zeroLeft(minutes)}`;
 }
 
 dateMessage();
