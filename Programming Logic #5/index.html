@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Model for testing</title>
+</head>
+<body>
+    
+    <section class="container">
+        <h1>BMI Calculator</h1>
+
+        <div>
+            <table>
+                <thead>
+                    <tr class="imc-container">
+                        <th>BMI</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="imc-container">
+                        <td>< 16</td>
+                        <td>Severe Thinness</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>16 - 16,9</td>
+                        <td>Moderate Thinness</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>17 - 18,5</td>
+                        <td>Mild Thinness</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>18,5 - 24,9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>25 - 29,9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>30 - 34,9</td>
+                        <td>Obese Class I</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>35 - 39,9</td>
+                        <td>Obese Class II</td>
+                    </tr>
+                    <tr class="imc-container">
+                        <td>≥ 40</td>
+                        <td>Obese Class III</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+
+        <h2>Calculate your BMI</h2>
+        <form action="" class="form">
+            <label for="weight">Weight in kg:</label>
+            <input type="text" id="weight" name="weight" placeholder="Kg">
+
+            <label for="height">Height in m:</label>
+            <input type="text" id="height" name="height" placeholder="M">
+    
+            <button>Calculate</button>
+        </form>
+
+        <div class="result"></div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
