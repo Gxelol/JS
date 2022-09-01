@@ -10,4 +10,4 @@
 
 const lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 const [list1, list2, list3] = lists;
-console.log(list2[1]);      // EASIER TO UNDERSTAND
+console.log(list2[1]);      // EASIER TO UNDERSTAND 
