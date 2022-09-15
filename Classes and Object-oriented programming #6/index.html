@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Model for testing</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Registration form</h1>
+        <ul>
+            <li>No field can be empty</li>
+            <li>User can only contain letters and/or numbers</li>
+            <li>User must have between 3 and 12 characters</li>
+            <li>Password must have between 6 and 12 characters</li>
+        </ul>
+
+        <form action="" class="form">
+            <label for="name">Name</label>
+            <input type="text" class="name validate">
+
+            <label for="surname">Surname</label>
+            <input type="text" class="surname validate">
+
+            <label for="cpf">CPF</label>
+            <input type="number" class="cpf validate">
+
+            <label for="user">User</label>
+            <input type="text" class="username validate">
+
+            <label for="password">Password</label>
+            <input type="password" class="password validate">
+
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" class="confirm-password validate">
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="assets/js/validateCpf.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
