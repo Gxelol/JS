@@ -1,15 +1,29 @@
-function rand(min, max) {
+function random(min, max) {
     min *= 1000;
     max *= 1000;
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
 function wait(msg, time) {
-    return new Promise(solve, reject) => {
-        if(typeof msg !== 'string') reject(false);
-
+    return new Promise((resolve, reject) => {
+        if(typeof msg !== 'string') reject(new Error('BAD VALUE'));
         setTimeout(() => {
-            solve(msg)
+            resolve(msg);
         }, time);
-    };
-}
+    });
+ }
+
+ wait('Wait 1', random(1, 3))
+    .then(answer => {
+        console.log(answer);
+        return wait('Wait 2', random(1, 3));
+    })
+    .then(answer => {
+        console.log(answer);
+        return wait(322222, random(1, 3));
+    }).then(answer => {
+        console.log(answer);
+    })
+    .catch(e => {
+        console.log('ERROR:', e);
+    });
