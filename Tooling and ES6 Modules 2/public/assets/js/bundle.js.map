@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAGAA,OAAO,CAACC,GAAR,CAAY,IAAZ,E","sources":["webpack://tooling-and-es6-modules-2/./src/index.js"],"sourcesContent":["\r\n\r\n\r\nconsole.log('11');"],"names":["console","log"],"sourceRoot":""}
