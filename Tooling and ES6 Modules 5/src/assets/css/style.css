@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --main-color: rgb(38, 117, 71);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--main-color);
+    font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+form input {
+    margin: 1rem;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+form button {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 20%;
+    color: #fff;
+    background: var(--main-color);  
+    border: 0.1rem solid #000;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+form button:hover {
+    color: var(--main-color);
+    background: #fff;  
+}
+
+.container {
+    max-width: 50rem;
+    margin: 5rem auto;
+    background: #fff;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.container h1{
+    margin-bottom: 2rem;
+}
+
+#characters {
+    width: 15%;
+}
