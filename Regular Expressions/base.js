@@ -21,8 +21,11 @@ const files = [
 //            <tag>something</tag>   <tag> text </tag>
 const html = ' <p>Hello world</p>   <p>Hello again</p> <div>I am the div</div>';
 
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01234 56789';
+
 module.exports = {
   text,
   files,
-  html
+  html,
+  alphabet
 }
