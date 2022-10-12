@@ -18,7 +18,11 @@ const files = [
   'Blend.png',
 ]
 
+//            <tag>something</tag>   <tag> text </tag>
+const html = ' <p>Hello world</p>   <p>Hello again</p> <div>I am the div</div>';
+
 module.exports = {
   text,
-  files
+  files,
+  html
 }
