@@ -40,9 +40,10 @@ Os Ips são:
         10.021.08.20 (ESTE IP NÃO É VÁLIDO)
    255.255.255.255
 `;
-
+ 
 //            <tag>something</tag>   <tag> text </tag>
 const html = ' <p>Hello world</p>   <p>Hello again</p> <div>I am the div</div>';
+const html2 = ' <p class="test"> Hello world and sun </p> <div class="something"> Am I the div </div> <p>Hello again</p>'
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01234 56789';
 
@@ -53,5 +54,6 @@ module.exports = {
   alphabet,
   cpf,
   ips,
-  cpf2
+  cpf2,
+  html2,
 }
