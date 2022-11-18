@@ -5,8 +5,8 @@ const x = {
         data: [
           {
             attributes: {
-              url: "srcImg",
-              alternativeText: "altText"
+              url: "MyUrl",
+              alternativeText: "MyAltText"
             }
           }
         ]
@@ -15,9 +15,18 @@ const x = {
   ]
 }
 
-console.log(x.sections.map((d) => {
-  console.log(d.image.data.map((data) => {
-    console.log(data.attributes.url);
-    console.log(data.attributes.alternativeText);
-  }));
+const sections = (x.sections.map((section) => {
+  return (
+    (section.image.data.map((data) => {
+    const srcImg = data.attributes.url;
+    const altText = data.attributes.alternativeText;
+
+    return (
+      { srcImg, altText }
+    );
+  })));
 }));
+
+console.log(sections[0][0].altText);
+console.log(sections[0][0].srcImg);
+
