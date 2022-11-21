@@ -1,5 +1,5 @@
-const x = {
-  sections: [
+const x = { 
+  grid: [
     {
       image: {
         data: [
@@ -7,7 +7,19 @@ const x = {
             attributes: {
               url: "MyUrl",
               alternativeText: "MyAltText"
-            }
+            },
+          },
+          {
+            attributes: {
+              url: "noooooo",
+              alternativeText: "MyAltText"
+            },
+          },
+          {
+            attributes: {
+              url: "nooo",
+              alternativeText: "MyAltText"
+            },
           }
         ]
       }
@@ -15,18 +27,16 @@ const x = {
   ]
 }
 
-const sections = (x.sections.map((section) => {
-  return (
-    (section.image.data.map((data) => {
-    const srcImg = data.attributes.url;
-    const altText = data.attributes.alternativeText;
-
-    return (
-      { srcImg, altText }
-    );
-  })));
-}));
-
-console.log(sections[0][0].altText);
-console.log(sections[0][0].srcImg);
+const grid = (x.grid.map((img) => {
+  const data = img.image.data;
+  return data.map((obj) => {
+    const {
+      attributes: { url: srcImg = '', alternativeText: altText = '' } = '',
+    } = obj;
+    return {
+      srcImg,
+      altText
+    }
+  })
+}))[0];
 
